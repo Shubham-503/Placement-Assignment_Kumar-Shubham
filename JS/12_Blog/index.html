@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="add__blog" onclick="openModal()">Add Blog</button>
+    <!-- Blogs Section -->
+    <main class="blogs"></main>
+
+    <!-- Modal Section -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <input type="text" class="newBlog__title" placeholder="Blog Title" />
+        <input type="text" class="newBlog__body" placeholder="Blog Body" />
+        <button class="createBlog" onclick="createBlog()">Create Blog</button>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
