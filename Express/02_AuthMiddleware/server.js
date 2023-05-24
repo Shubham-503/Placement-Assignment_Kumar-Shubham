@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-app.get("/post", auth, (req, res, next) => {
+app.get("/post", auth, (req, res) => {
   try {
     res
       .status(200)
