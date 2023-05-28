@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pt {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  padding: 5rem;
+  gap: 0.5rem;
+  width: max-content;
+}
+
+.pt-head > .box:nth-child(4) {
+  margin-left: 1.5rem;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.elements {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row-num {
+  margin-left: 1rem;
+}
+.elements {
+  margin-left: 1.5rem;
+}
+
+.row-left {
+  display: flex;
+  gap: 0.5rem;
+}
+.row-right {
+  width: inherit;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 2rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  min-height: 2rem;
+  border: 2px solid rgb(79, 76, 76);
+  /* padding: 0.51rem 1.5rem;*/
+}
+
+/* .row4 > .box:nth-child(2),.row1> .box:nth-child(2){
+  background-color: aqua;
+  margin-left: 2.5rem;
+}
+
+.row1>.box:nth-last-child(1){
+  align-self: flex-end;
+} */
+
+.row7 .row-right,
+.row6 .row-right {
+  position: relative;
+}
+.conditions {
+  position: absolute;
+  left: -15px;
+}
+
+.row-extra {
+  position: relative;
+  /* display: flex; */
+}
+
+.row-extra > .row-right {
+  /* width: min-content; */
+  position: relative;
+  left: -5rem;
+}
+
+.cond {
+  position: absolute;
+  left: 13.5rem;
+}
+
+.pt-head .box {
+  border: none;
+}
+.row-num .box {
+  border: none;
+}
+
+.row-left .box {
+  background-color: #d67f7f;
+}
+
+.row2 .row-right .box:nth-last-child(-n + 6),
+.row3 .row-right .box:nth-last-child(-n + 6),
+.row4 .row-right .box:nth-last-child(-n + 6),
+.row5 .row-right .box:nth-last-child(-n + 6),
+.row6 .row-right .box:nth-last-child(-n + 6),
+.row7 .row-right .box:nth-last-child(-n + 6) {
+  background-color: #fdff8c;
+}
+.row-right .box:nth-child(-n + 11) {
+  background-color: #87b4e2;
+}
+
+.row-extra .box {
+  background-color: #9bff99 !important;
+}
+.row1 .row-right .box {
+  background-color: #d67f7f;
+}
